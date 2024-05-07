@@ -148,6 +148,8 @@ GameObject:
   - component: {fileID: 3140716159854546078}
   - component: {fileID: 3140716159854546077}
   - component: {fileID: 132082636228686810}
+  - component: {fileID: 2201568482099456785}
+  - component: {fileID: 750512083439898492}
   m_Layer: 5
   m_Name: GirlPanel 1
   m_TagString: Girl
@@ -274,12 +276,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452beed4f7c56ce42b756318f19eaee3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GirlSO: {fileID: 11400000, guid: eb0dd2daf83bc7e4481bb01fd799abc2, type: 2}
+  girlSO: {fileID: 0}
   girlName: {fileID: 1878176654514241076}
   achivmentsCount: {fileID: 1128998375351220854}
   girlSprite: {fileID: 3140716160935301619}
   achivmentStatus: {fileID: 458937476778693485}
   achivmentSprite: {fileID: 4194230209502058284}
+--- !u!114 &2201568482099456785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3140716159854546075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13bc650794e34a778703b09abe3e2228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  girlSO: {fileID: 11400000, guid: eb0dd2daf83bc7e4481bb01fd799abc2, type: 2}
+--- !u!114 &750512083439898492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3140716159854546075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea72558edd7e4f85add76dbb417d013b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _girlSO: {fileID: 0}
 --- !u!1 &3140716160935301617
 GameObject:
   m_ObjectHideFlags: 0

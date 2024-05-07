@@ -1,14 +1,16 @@
+using System;
 using GirlPanel;
+using MVP_Archive;
 using ScriptableObjects.Girls;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-public class GirlPanelInfo : MonoBehaviour
+public class GirlPanelView : View
 {
     
-    [SerializeField] private GirlSO GirlSO;
+    [SerializeField] private GirlSO girlSO;
     
     [SerializeField] private TextMeshProUGUI girlName;
     [SerializeField] private TextMeshProUGUI achivmentsCount;
@@ -24,13 +26,21 @@ public class GirlPanelInfo : MonoBehaviour
     
     private void Awake()
     {
+        gameObject.SetActive(true);
         _presenter = GetComponentInParent<GirlPanelPresenter>();
         _button = GetComponent<Button>();
-        girlName.text = GirlSO.girlName;
-        achivmentsCount.text = $"{GirlSO.achivmentsCount} из 5";
-        girlSprite.sprite = GirlSO.girlSprite;
+        
+        
+    }
 
-        _isAchivmentUnlocked = GirlSO.isAchivmentUnlocked;
+    private void Start()
+    {
+        girlSO = _presenter.GetGirlSO();
+        girlName.text = girlSO.girlName;
+        achivmentsCount.text = $"{girlSO.achivmentsCount} из 5";
+        girlSprite.sprite = girlSO.girlSprite;
+
+        _isAchivmentUnlocked = girlSO.isAchivmentUnlocked;
         if (_isAchivmentUnlocked)
         {
             achivmentStatus.text = "Пройдено";
@@ -42,11 +52,11 @@ public class GirlPanelInfo : MonoBehaviour
             achivmentSprite.gameObject.SetActive(false);
         }
         
-        _button.onClick.AddListener(() => _presenter.OnGirlClicked());   
+        _button.onClick.AddListener(() => _presenter.OnGirlClicked());  
     }
 
-    public void OnGirlClicked(int girlNumber)
+    public override void ObButtonClicked(int buttonNumber)
     {
-        _presenter.OnGirlButtonClicked(girlNumber);
+        _presenter.OnGirlButtonClicked(buttonNumber);
     }
 }
