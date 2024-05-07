@@ -1,3 +1,4 @@
+using GirlPanel;
 using ScriptableObjects.Girls;
 using TMPro;
 using UnityEngine;
@@ -17,8 +18,14 @@ public class GirlPanelInfo : MonoBehaviour
     [SerializeField] private Image achivmentSprite;
     private bool _isAchivmentUnlocked;
     
+    private Button _button;
+    
+    private GirlPanelPresenter _presenter;
+    
     private void Awake()
     {
+        _presenter = GetComponentInParent<GirlPanelPresenter>();
+        _button = GetComponent<Button>();
         girlName.text = GirlSO.girlName;
         achivmentsCount.text = $"{GirlSO.achivmentsCount} из 5";
         girlSprite.sprite = GirlSO.girlSprite;
@@ -35,17 +42,11 @@ public class GirlPanelInfo : MonoBehaviour
             achivmentSprite.gameObject.SetActive(false);
         }
         
-    }
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+        _button.onClick.AddListener(() => _presenter.OnGirlClicked());   
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnGirlClicked(int girlNumber)
     {
-        
+        _presenter.OnGirlButtonClicked(girlNumber);
     }
 }

@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 3140716159854546077}
   - component: {fileID: 132082636228686810}
   m_Layer: 5
-  m_Name: GirlPanel
+  m_Name: GirlPanel 1
   m_TagString: Girl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -274,7 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452beed4f7c56ce42b756318f19eaee3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GirlSO: {fileID: 11400000, guid: 401e65595d1881b478d5b53e4663fe0a, type: 2}
+  GirlSO: {fileID: 11400000, guid: eb0dd2daf83bc7e4481bb01fd799abc2, type: 2}
   girlName: {fileID: 1878176654514241076}
   achivmentsCount: {fileID: 1128998375351220854}
   girlSprite: {fileID: 3140716160935301619}

@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62762a0323cb4c7690470cfcb4a8938a, type: 3}
-  m_Name: Sasha
+  m_Name: Lena
   m_EditorClassIdentifier: 
   girlSprite: {fileID: 21300000, guid: 46477e2b5c75edc49ae8e6b41f48ee0f, type: 3}
-  girlName: "\u0421\u0430\u0448\u0430"
-  achivmentsCount: 2
+  girlName: "\u041B\u0435\u043D\u0430"
+  achivmentsCount: 1
   girlAge: 0
   girlAdress: 
   girlDescription: 
   girlInterests: []
   girlDislikes: []
   girlAchivments: []
-  isAchivmentUnlocked: 1
+  isAchivmentUnlocked: 0
   achivmentSprite: {fileID: 0}
