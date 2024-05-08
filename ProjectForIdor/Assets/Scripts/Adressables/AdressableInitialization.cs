@@ -17,6 +17,8 @@
         
         private List<GirlSO> loadedGirlSOs = new List<GirlSO>();
         
+        
+        
 
         public void InitializeGirls( )
         {

@@ -38,27 +38,27 @@ public class GirlPanelView : View
         
     }
 
-    private void Start()
-    {
-        girlSO = _presenter.GetGirlSO();
-        girlName.text = girlSO.girlName;
-        achivmentsCount.text = $"{girlSO.achivmentsCount} из 5";
-        girlSprite.sprite = girlSO.girlSprite;
-
-        _isAchivmentUnlocked = girlSO.isAchivmentUnlocked;
-        if (_isAchivmentUnlocked)
-        {
-            achivmentStatus.text = "Пройдено";
-            achivmentSprite.gameObject.SetActive(true);
-        }
-        else
-        {
-            achivmentStatus.text = "Не пройдено";
-            achivmentSprite.gameObject.SetActive(false);
-        }
-        
-        _button.onClick.AddListener(() => _presenter.OnGirlClicked());  
-    }
+    // private void Start()
+    // {
+    //     girlSO = _presenter.GetGirlSO();
+    //     girlName.text = girlSO.girlName;
+    //     achivmentsCount.text = $"{girlSO.achivmentsCount} из 5";
+    //     girlSprite.sprite = girlSO.girlSprite;
+    //
+    //     _isAchivmentUnlocked = girlSO.isAchivmentUnlocked;
+    //     if (_isAchivmentUnlocked)
+    //     {
+    //         achivmentStatus.text = "Пройдено";
+    //         achivmentSprite.gameObject.SetActive(true);
+    //     }
+    //     else
+    //     {
+    //         achivmentStatus.text = "Не пройдено";
+    //         achivmentSprite.gameObject.SetActive(false);
+    //     }
+    //     
+    //     _button.onClick.AddListener(() => _presenter.OnGirlClicked());  
+    // }
 
     public override void OnButtonClicked(int buttonNumber)
     {
