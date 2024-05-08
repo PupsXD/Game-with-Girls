@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: GirlPage
+  m_EditorClassIdentifier: 
+  m_GroupName: GirlPage
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 2d93fe0030b059f4d89235b00e9a3582
+  m_SerializeEntries:
+  - m_GUID: 169e68ec6fe6278438c4221e55df5aa0
+    m_Address: Assets/Prefabs/GirlPage/GirlPageCanvas.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: ecbf5f75f5e5e7a4da7e387b189fb245, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 8dcbd66957050e649a8a82ee3b57a2db, type: 2}
+    - {fileID: 11400000, guid: 1b4dd67cf792f1042bc8dabe40bbf083, type: 2}
