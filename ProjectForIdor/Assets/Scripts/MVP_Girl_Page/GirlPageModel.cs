@@ -16,6 +16,8 @@ public class GirlPageModel : MonoBehaviour
     {
         return girlSO;
     }
+    
+    
       
    
 }

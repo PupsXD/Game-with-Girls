@@ -6,6 +6,8 @@ namespace ScriptableObjects.Girls
     [CreateAssetMenu(fileName = "GirlData", menuName = "Create Passion/Create New Girl", order = 0)]
     public class GirlSO : ScriptableObject
     {
+        public int girlIndex;
+        
         public Sprite girlSprite;
         public string girlName;
         public int achivmentsCount;

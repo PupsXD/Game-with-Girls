@@ -13,10 +13,10 @@ namespace GirlPanel
         
         private void Awake()
         {
-            
-            _girlPanelModel = GetComponent<GirlPanelModel>();
+            _girlPanelModel = GameObject.FindGameObjectsWithTag("MVP")[0].GetComponent<GirlPanelModel>();
+            //_girlPanelModel = GetComponent<GirlPanelModel>();
             _girlPanelView = GetComponent<GirlPanelView>();
-            _girlSO = _girlPanelModel.GetGirlSO();
+            //_girlSO = _girlPanelModel.GetGirlSO();
             
         }
         

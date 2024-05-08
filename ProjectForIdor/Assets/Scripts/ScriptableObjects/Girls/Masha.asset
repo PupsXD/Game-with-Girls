@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62762a0323cb4c7690470cfcb4a8938a, type: 3}
   m_Name: Masha
   m_EditorClassIdentifier: 
+  girlIndex: 2
   girlSprite: {fileID: 21300000, guid: 46477e2b5c75edc49ae8e6b41f48ee0f, type: 3}
   girlName: "\u041C\u0430\u0448\u0430"
   achivmentsCount: 3

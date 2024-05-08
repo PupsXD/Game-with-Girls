@@ -4,6 +4,7 @@ using MVP_Archive;
 using ScriptableObjects.Girls;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
@@ -23,13 +24,17 @@ public class GirlPanelView : View
     private Button _button;
     
     private GirlPanelPresenter _presenter;
+
+    public UnityEvent OnGirlButtonClicked;
+    
+    
     
     private void Awake()
     {
         gameObject.SetActive(true);
         _presenter = GetComponentInParent<GirlPanelPresenter>();
         _button = GetComponent<Button>();
-        
+        OnGirlButtonClicked.AddListener(GameObject.FindGameObjectsWithTag("Instantiator")[0].GetComponent<AdressableInitialization>().InitializeGirlPageCanvas);
         
     }
 
@@ -55,8 +60,9 @@ public class GirlPanelView : View
         _button.onClick.AddListener(() => _presenter.OnGirlClicked());  
     }
 
-    public override void ObButtonClicked(int buttonNumber)
+    public override void OnButtonClicked(int buttonNumber)
     {
         _presenter.OnGirlButtonClicked(buttonNumber);
+        OnGirlButtonClicked.Invoke();
     }
 }
