@@ -1,6 +1,5 @@
     using System.Collections.Generic;
     using ScriptableObjects.Girls;
-    using Unity.VisualScripting;
     using UnityEngine;
     using UnityEngine.AddressableAssets;
     using UnityEngine.ResourceManagement.AsyncOperations;
@@ -10,10 +9,12 @@
         [SerializeField] private List<AssetReference> girlSO;
 
         [SerializeField] private AssetReference girlPage;
+        
+        private GameObject _girlPageInstance;
 
         [SerializeField] private AssetReference girlPageCanvas;
         
-        private GameObject _instanceRefrerence;
+        private GameObject _instanceRefererence;
         
         private List<GirlSO> loadedGirlSOs = new List<GirlSO>();
         
@@ -40,7 +41,22 @@
         
         public void InitializeGirlPageCanvas()
         {
-            girlPageCanvas.LoadAssetAsync<GameObject>().Completed += OnAddressableLoaded;
+            
+                girlPageCanvas.InstantiateAsync().Completed += OnGirlPageInstantiated;
+            
+            // else if (Load == false)
+            // {
+            //     
+            // }
+            
+        }
+        
+        public void ReleaseGirlPage()
+        {
+            
+                girlPageCanvas.ReleaseInstance(_instanceRefererence);
+                //Destroy(_instanceRefererence);
+            
         }
 
         private void OnAddressableLoaded(AsyncOperationHandle<GameObject> handle)
@@ -58,6 +74,14 @@
                 Debug.LogError("Adressable was not loaded");
             }
                 
+        }
+
+        private void OnGirlPageInstantiated(AsyncOperationHandle<GameObject> handle)
+        {
+            if (handle.Status == AsyncOperationStatus.Succeeded)
+            {
+                _instanceRefererence = handle.Result;
+            }
         }
         
         private void OnGirlLoaded(AsyncOperationHandle<GirlSO> handle)

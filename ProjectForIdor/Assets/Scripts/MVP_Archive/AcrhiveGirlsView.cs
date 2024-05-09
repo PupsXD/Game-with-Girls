@@ -38,7 +38,7 @@ namespace MVP_Archive
 
         [SerializeField] private GirlSO girlSO;
 
-        public UnityEvent OnGirlPageClicked;
+        public UnityEvent OnGirlPageCloseButtonClicked;
         
         
         private GirlPanelPresenter _presenter;
@@ -47,6 +47,7 @@ namespace MVP_Archive
         {
 
             _presenter = GameObject.FindGameObjectsWithTag("MVP")[0].GetComponent<GirlPanelPresenter>();
+            OnGirlPageCloseButtonClicked.AddListener(_presenter.CloseGirlPage);
         }
 
 
@@ -75,6 +76,7 @@ namespace MVP_Archive
 
         public override void CloseButtonClicked()
         {
+            OnGirlPageCloseButtonClicked.Invoke();
             Debug.Log("Closed");
           // _presenter.OnCloseButtonClicked(gameObject); тут дело в том, что скрипт на MVP page
         }

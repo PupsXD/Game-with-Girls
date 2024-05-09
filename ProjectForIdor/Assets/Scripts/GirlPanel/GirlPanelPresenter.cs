@@ -21,6 +21,7 @@ namespace GirlPanel
         private bool _isGirlPageLoaded = false;
         
         public UnityEvent OnGirlGirlPageLoad;
+        public UnityEvent OnGirlPageClosed;
         
         private void Awake()
         {
@@ -31,6 +32,7 @@ namespace GirlPanel
             //_girlPanelView = GetComponent<GirlPanelView>();
             //_girlSO = _girlPanelModel.GetGirlSO();
             OnGirlGirlPageLoad.AddListener(GameObject.FindGameObjectsWithTag("Instantiator")[0].GetComponent<AdressableInitialization>().InitializeGirlPageCanvas);
+            OnGirlPageClosed.AddListener(GameObject.FindGameObjectsWithTag("Instantiator")[0].GetComponent<AdressableInitialization>().ReleaseGirlPage);
         }
         
         private void Update()
@@ -71,6 +73,16 @@ namespace GirlPanel
             {
                 OnGirlGirlPageLoad.Invoke();
                 _isGirlPageLoaded = true;
+            }
+            
+        }
+        
+        public void CloseGirlPage()
+        {
+            if (_isGirlDataLoaded)
+            {
+                OnGirlPageClosed.Invoke();
+                _isGirlPageLoaded = false;
             }
             
         }
