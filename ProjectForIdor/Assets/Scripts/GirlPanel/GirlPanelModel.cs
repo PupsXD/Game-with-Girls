@@ -34,6 +34,7 @@ namespace GirlPanel
                 _presenter.SetGirlSO(girlSOList);
             }
         }
+        
 
         private void SetGirlSO()
         {

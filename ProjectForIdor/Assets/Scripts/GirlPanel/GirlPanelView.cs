@@ -60,6 +60,28 @@ public class GirlPanelView : View
     //     _button.onClick.AddListener(() => _presenter.OnGirlClicked());  
     // }
 
+    public void SetGirlSO(GirlSO girlSO)
+    {
+        this.girlSO = girlSO;
+        girlName.text = girlSO.girlName;
+        achivmentsCount.text = $"{girlSO.achivmentsCount} из 5";
+        girlSprite.sprite = girlSO.girlSprite;
+
+        _isAchivmentUnlocked = girlSO.isAchivmentUnlocked;
+        if (_isAchivmentUnlocked)
+        {
+            achivmentStatus.text = "Пройдено";
+            achivmentSprite.gameObject.SetActive(true);
+        }
+        else
+        {
+            achivmentStatus.text = "Не пройдено";
+            achivmentSprite.gameObject.SetActive(false);
+        }
+
+        _button.onClick.AddListener(() => _presenter.OnGirlClicked());
+    }
+
     public override void OnButtonClicked(int buttonNumber)
     {
         _presenter.OnGirlButtonClicked(buttonNumber);
