@@ -22,6 +22,9 @@ namespace GirlPanel
         
         public UnityEvent OnGirlGirlPageLoad;
         public UnityEvent OnGirlPageClosed;
+
+
+        private int _girlNumberCLicked; //Переменная для отслеживания на какую девушку кликнули
         
         private void Awake()
         {
@@ -50,9 +53,18 @@ namespace GirlPanel
             {
                 archiveGirlsView = GameObject.FindGameObjectsWithTag("MVP_GirlPage")[0].GetComponent<AcrhiveGirlsView>();
             }
+
+            if (_isGirlPageLoaded && _isGirlDataLoaded && _girlNumberCLicked != null)
+            {
+                SetDataOnGirlPage(_girlNumberCLicked);
+            }
             
             
-            
+        }
+        
+        public void SetDataOnGirlPage(int i)
+        {
+            archiveGirlsView.SetGirlSO(girlSOList[i]);
         }
         
         
@@ -74,6 +86,8 @@ namespace GirlPanel
                 OnGirlGirlPageLoad.Invoke();
                 _isGirlPageLoaded = true;
             }
+            
+            _girlNumberCLicked = girlNumber;
             
         }
         

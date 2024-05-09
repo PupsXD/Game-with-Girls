@@ -56,17 +56,13 @@ namespace MVP_Archive
 
         private bool _isAchivmentUnlocked;
 
-        public void SetGirlSO(GirlSO girlSO)
+        public void SetGirlSO(GirlSO newGirlSO)
         {
+            girlSO = newGirlSO;
             girlSprite.sprite = girlSO.girlSprite;
-            //girlName.text = girlSO.girlName;
-            achivmentsCount.text = $"{girlSO.achivmentsCount} из 5";
-            _isAchivmentUnlocked = girlSO.isAchivmentUnlocked;
-            if (_isAchivmentUnlocked)
-            {
-                achivmentStatus.text = "Пройдено";
-                achivmentSprite.gameObject.SetActive(true);
-            }
+            aboutGirl.text = $"{girlSO.girlName}, {girlSO.girlAge} лет, {girlSO.girlAdress}";
+            
+            
         }
 
         public override void OnButtonClicked(int buttonNumber)
