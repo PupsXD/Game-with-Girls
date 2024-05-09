@@ -17,6 +17,11 @@ namespace GirlPanel
         
         [SerializeField] private AcrhiveGirlsView archiveGirlsView;
         
+        private bool _isGirlDataLoaded = false;
+        private bool _isGirlPageLoaded = false;
+        
+        public UnityEvent OnGirlGirlPageLoad;
+        
         private void Awake()
         {
             _girlPanelModel = GetComponent<GirlPanelModel>();
@@ -25,7 +30,7 @@ namespace GirlPanel
             //_girlPanelModel = GetComponent<GirlPanelModel>();
             //_girlPanelView = GetComponent<GirlPanelView>();
             //_girlSO = _girlPanelModel.GetGirlSO();
-            
+            OnGirlGirlPageLoad.AddListener(GameObject.FindGameObjectsWithTag("Instantiator")[0].GetComponent<AdressableInitialization>().InitializeGirlPageCanvas);
         }
         
         private void Update()
@@ -36,8 +41,16 @@ namespace GirlPanel
                 {
                     girlList[i].GetComponent<GirlPanelView>().SetGirlSO(girlSOList[i]);
                 }
+                _isGirlDataLoaded = true;
             }
-            archiveGirlsView = GameObject.FindGameObjectsWithTag("MVP_GirlPage")[0].GetComponent<AcrhiveGirlsView>();
+            
+            if (_isGirlPageLoaded)
+            {
+                archiveGirlsView = GameObject.FindGameObjectsWithTag("MVP_GirlPage")[0].GetComponent<AcrhiveGirlsView>();
+            }
+            
+            
+            
         }
         
         
@@ -54,6 +67,11 @@ namespace GirlPanel
 
         public void OnGirlButtonClicked(int girlNumber)
         {
+            if (_isGirlDataLoaded)
+            {
+                OnGirlGirlPageLoad.Invoke();
+                _isGirlPageLoaded = true;
+            }
             
         }
 

@@ -25,7 +25,7 @@ public class GirlPanelView : View
     
     private GirlPanelPresenter _presenter;
 
-    public UnityEvent OnGirlButtonClicked;
+    //public UnityEvent OnGirlButtonClicked;
     
     
     
@@ -34,7 +34,7 @@ public class GirlPanelView : View
         gameObject.SetActive(true);
         _presenter = GameObject.FindGameObjectsWithTag("MVP")[0].GetComponent<GirlPanelPresenter>();
         _button = GetComponent<Button>();
-        OnGirlButtonClicked.AddListener(GameObject.FindGameObjectsWithTag("Instantiator")[0].GetComponent<AdressableInitialization>().InitializeGirlPageCanvas);
+        //OnGirlButtonClicked.AddListener(GameObject.FindGameObjectsWithTag("Instantiator")[0].GetComponent<AdressableInitialization>().InitializeGirlPageCanvas);
         
     }
 
@@ -85,7 +85,7 @@ public class GirlPanelView : View
     public override void OnButtonClicked(int buttonNumber)
     {
         _presenter.OnGirlButtonClicked(buttonNumber);
-        OnGirlButtonClicked.Invoke();
+        //OnGirlButtonClicked.Invoke();
     }
 
     public override void CloseButtonClicked()
