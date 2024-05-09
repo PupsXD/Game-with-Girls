@@ -32,7 +32,7 @@ public class GirlPanelView : View
     private void Awake()
     {
         gameObject.SetActive(true);
-        _presenter = GetComponentInParent<GirlPanelPresenter>();
+        _presenter = GameObject.FindGameObjectsWithTag("MVP")[0].GetComponent<GirlPanelPresenter>();
         _button = GetComponent<Button>();
         OnGirlButtonClicked.AddListener(GameObject.FindGameObjectsWithTag("Instantiator")[0].GetComponent<AdressableInitialization>().InitializeGirlPageCanvas);
         
