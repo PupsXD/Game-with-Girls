@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using GirlPanel;
 using ScriptableObjects.Girls;
 using TMPro;
 using UnityEngine;
@@ -7,12 +8,13 @@ using UnityEngine.UI;
 
 namespace MVP_Archive
 {
-    public class AcrhiveGirlsView : MonoBehaviour
+    public class AcrhiveGirlsView : View
     {
         [SerializeField] private Image girlSprite;
-        [SerializeField] private TextMeshProUGUI girlName;
-        [SerializeField] private TextMeshProUGUI girlAdress;
-        [SerializeField] private TextMeshProUGUI girlAge;
+        [SerializeField] private TextMeshProUGUI aboutGirl;
+        //[SerializeField] private TextMeshProUGUI girlName;
+        //[SerializeField] private TextMeshProUGUI girlAdress;
+        //[SerializeField] private TextMeshProUGUI girlAge;
         
         [SerializeField] private List<Image> girlRating;
         
@@ -30,6 +32,8 @@ namespace MVP_Archive
         [SerializeField] private List<TextMeshProUGUI> girlInterests;
         [SerializeField] private List<Image> girlInterestIcons;
         [SerializeField] private List<TextMeshProUGUI> girlDislikes;
+        [SerializeField] private List<Image> girlDislikeIcons;
+        [SerializeField] private List<Image> girlAchivmentIcons;
         [SerializeField] private List<TextMeshProUGUI> girlAchivments;
 
         [SerializeField] private GirlSO girlSO;
@@ -37,6 +41,15 @@ namespace MVP_Archive
         public UnityEvent OnGirlPageClicked;
         
         
+        private GirlPanelPresenter _presenter;
+
+        private void Start()
+        {
+
+            _presenter = GameObject.FindGameObjectsWithTag("MVP")[0].GetComponent<GirlPanelPresenter>();
+        }
+
+
 
 
 
@@ -45,7 +58,7 @@ namespace MVP_Archive
         public void SetGirlSO(GirlSO girlSO)
         {
             girlSprite.sprite = girlSO.girlSprite;
-            girlName.text = girlSO.girlName;
+            //girlName.text = girlSO.girlName;
             achivmentsCount.text = $"{girlSO.achivmentsCount} из 5";
             _isAchivmentUnlocked = girlSO.isAchivmentUnlocked;
             if (_isAchivmentUnlocked)
@@ -55,6 +68,16 @@ namespace MVP_Archive
             }
         }
 
+        public override void OnButtonClicked(int buttonNumber)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override void CloseButtonClicked()
+        {
+            Debug.Log("Closed");
+          // _presenter.OnCloseButtonClicked(gameObject); тут дело в том, что скрипт на MVP page
+        }
     }
 
 

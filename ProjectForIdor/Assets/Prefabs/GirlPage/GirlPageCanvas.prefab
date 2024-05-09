@@ -7174,7 +7174,7 @@ GameObject:
   - component: {fileID: 4201735072821482958}
   m_Layer: 0
   m_Name: GirlPageView
-  m_TagString: Untagged
+  m_TagString: MVP_GirlPage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7207,9 +7207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   girlSprite: {fileID: 3459905510678487702}
-  girlName: {fileID: 0}
-  girlAdress: {fileID: 0}
-  girlAge: {fileID: 0}
+  aboutGirl: {fileID: 3459905512604184613}
   girlRating:
   - {fileID: 3459905510710765939}
   - {fileID: 3459905511035077771}
@@ -7224,8 +7222,36 @@ MonoBehaviour:
   - {fileID: 3459905512262388606}
   - {fileID: 3459905511248369682}
   - {fileID: 3459905512476127887}
-  girlDislikes: []
-  girlAchivments: []
+  girlInterestIcons:
+  - {fileID: 3459905511970603481}
+  - {fileID: 3459905511650793512}
+  - {fileID: 3459905511792033128}
+  - {fileID: 3459905511716851704}
+  - {fileID: 3459905511309444049}
+  girlDislikes:
+  - {fileID: 3459905511529626961}
+  - {fileID: 3459905510639395849}
+  - {fileID: 3459905512447121159}
+  - {fileID: 3459905510906745058}
+  - {fileID: 3459905512118473365}
+  girlDislikeIcons:
+  - {fileID: 3459905511747537096}
+  - {fileID: 3459905512485775879}
+  - {fileID: 3459905511218948402}
+  - {fileID: 3459905512337273890}
+  - {fileID: 3459905510651703190}
+  girlAchivmentIcons:
+  - {fileID: 3459905512205681049}
+  - {fileID: 3459905512357559735}
+  - {fileID: 3459905512160630931}
+  - {fileID: 3459905512525008776}
+  - {fileID: 3459905512468677402}
+  girlAchivments:
+  - {fileID: 3459905511092063525}
+  - {fileID: 3459905512563987843}
+  - {fileID: 3459905511977601510}
+  - {fileID: 3459905511615316343}
+  - {fileID: 3459905512275756745}
   girlSO: {fileID: 0}
   OnGirlPageClicked:
     m_PersistentCalls:
@@ -7351,4 +7377,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8204109389249374877}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4201735072821482958}
+        m_TargetAssemblyTypeName: MVP_Archive.AcrhiveGirlsView, Assembly-CSharp
+        m_MethodName: CloseButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

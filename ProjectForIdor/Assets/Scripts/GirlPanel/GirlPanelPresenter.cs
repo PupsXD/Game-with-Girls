@@ -15,6 +15,8 @@ namespace GirlPanel
         [SerializeField] private List<GirlSO> girlSOList = new List<GirlSO>();
         [SerializeField] private List<GameObject> girlList = new List<GameObject>();
         
+        [SerializeField] private AcrhiveGirlsView archiveGirlsView;
+        
         private void Awake()
         {
             _girlPanelModel = GetComponent<GirlPanelModel>();
@@ -35,38 +37,8 @@ namespace GirlPanel
                     girlList[i].GetComponent<GirlPanelView>().SetGirlSO(girlSOList[i]);
                 }
             }
+            archiveGirlsView = GameObject.FindGameObjectsWithTag("MVP_GirlPage")[0].GetComponent<AcrhiveGirlsView>();
         }
-        
-        // public GirlSO GetGirlSO()
-        // {
-        //     return _girlSO;
-        // }
-        
-        private void Start()
-        {
-            
-        }
-        // private void SetUpGirlInfo()
-        // {
-        //     girlSO = _presenter.GetGirlSO();
-        //     girlName.text = girlSO.girlName;
-        //     achivmentsCount.text = $"{girlSO.achivmentsCount} из 5";
-        //     girlSprite.sprite = girlSO.girlSprite;
-        //
-        //     _isAchivmentUnlocked = girlSO.isAchivmentUnlocked;
-        //     if (_isAchivmentUnlocked)
-        //     {
-        //         achivmentStatus.text = "Пройдено";
-        //         achivmentSprite.gameObject.SetActive(true);
-        //     }
-        //     else
-        //     {
-        //         achivmentStatus.text = "Не пройдено";
-        //         achivmentSprite.gameObject.SetActive(false);
-        //     }
-        //     
-        //     _button.onClick.AddListener(() => _presenter.OnGirlClicked());  
-        // }
         
         
 
@@ -83,6 +55,11 @@ namespace GirlPanel
         public void OnGirlButtonClicked(int girlNumber)
         {
             
+        }
+
+        public void OnCloseButtonClicked(GameObject girlPage)
+        {
+            girlPage.SetActive(false);
         }
     }
     

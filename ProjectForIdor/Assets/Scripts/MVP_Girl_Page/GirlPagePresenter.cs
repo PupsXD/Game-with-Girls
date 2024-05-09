@@ -15,4 +15,9 @@ public class GirlPagePresenter : MonoBehaviour
     {
         
     }
+
+    public void OnCloseButtonClicked()
+    {
+        throw new System.NotImplementedException();
+    }
 }

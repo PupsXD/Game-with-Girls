@@ -87,4 +87,9 @@ public class GirlPanelView : View
         _presenter.OnGirlButtonClicked(buttonNumber);
         OnGirlButtonClicked.Invoke();
     }
+
+    public override void CloseButtonClicked()
+    {
+        Debug.Log("Closed");
+    }
 }
