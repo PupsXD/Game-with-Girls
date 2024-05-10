@@ -18,9 +18,9 @@ namespace ScriptableObjects.Girls
         public List<string> girlDislikes;
         public List<string> girlAchivments;
         
-        public int[] girlRating = new int[3] {0, 1, 2};
+        public int[] girlRating = new int[] {0, 1, 2};
         
         public bool isAchivmentUnlocked = false;
-        public Sprite achivmentSprite;
+        
     }
 }

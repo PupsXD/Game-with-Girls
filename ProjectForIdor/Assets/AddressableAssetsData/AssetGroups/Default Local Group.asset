@@ -25,6 +25,10 @@ MonoBehaviour:
     m_Address: Assets/Scenes/GirlPage.unity
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: c0cc9519215ef844fb5f65c7f08e8ae8
+    m_Address: Assets/Images/GirlPage/all_achievements_fragments_icon.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: ecbf5f75f5e5e7a4da7e387b189fb245, type: 2}
   m_SchemaSet:
