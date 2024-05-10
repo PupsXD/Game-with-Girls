@@ -27,6 +27,7 @@ namespace MVP_Archive
         [SerializeField] private List<Image> girlDislikeIcons;
         [SerializeField] private List<Image> girlAchivmentIcons;
         [SerializeField] private List<TextMeshProUGUI> girlAchivments;
+        [SerializeField] private List<Image> girlAchivmentStatus;
 
         [SerializeField] private GirlSO girlSO;
         
@@ -76,6 +77,8 @@ namespace MVP_Archive
             for (int i = 0; i < girlSO.girlAchivments.Count; i++)
             {
                 girlAchivments[i].text = girlSO.girlAchivments[i];
+                girlAchivmentIcons[i].sprite = imagesList.achivmentIcon;
+                girlAchivmentStatus[i].sprite = imagesList.achivmentFinishedIcon;
             }
             
         }

@@ -21,4 +21,4 @@ MonoBehaviour:
   achivmentIcon: {fileID: 21300000, guid: 4224e4b971c5ab44081c9a78a317e305, type: 3}
   achivmentNeutralIcon: {fileID: 21300000, guid: 091d5a016db6f904cb82ba8d9faa688c, type: 3}
   achivmentPuzzleIcon: {fileID: 21300000, guid: c0cc9519215ef844fb5f65c7f08e8ae8, type: 3}
-  achivmentFinishedPuzzleIcon: {fileID: 0}
+  achivmentFinishedIcon: {fileID: 21300000, guid: b9e27ef4480cd6c4dbdbfdaee4be6119, type: 3}
