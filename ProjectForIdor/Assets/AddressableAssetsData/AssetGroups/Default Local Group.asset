@@ -29,10 +29,6 @@ MonoBehaviour:
     m_Address: Assets/Prefabs/GirlPage/GirlPage.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 9a831f24642e6514aac322940b6f7460
-    m_Address: Assets/Prefabs/GirlPage/GirlPage 1.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   - m_GUID: 790511986cb212947a55bab50ed1ba03
     m_Address: Assets/Prefabs/GirlPage/GirlPageHolder.prefab
     m_ReadOnly: 0
@@ -43,10 +39,6 @@ MonoBehaviour:
     m_SerializedLabels: []
   - m_GUID: 87d366de17a5a844ca2ec14ef57e8f65
     m_Address: Assets/Prefabs/GirlPage/GirlPageWIthCanvas.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: b4b0966da4155b045b03b86ae4c858a9
-    m_Address: Assets/Prefabs/GirlPage/Image.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0
