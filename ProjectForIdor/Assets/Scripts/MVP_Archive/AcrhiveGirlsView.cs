@@ -13,9 +13,7 @@ namespace MVP_Archive
     {
         [SerializeField] private Image girlSprite;
         [SerializeField] private TextMeshProUGUI aboutGirl;
-        //[SerializeField] private TextMeshProUGUI girlName;
-        //[SerializeField] private TextMeshProUGUI girlAdress;
-        //[SerializeField] private TextMeshProUGUI girlAge;
+        
         
         [SerializeField] private List<Image> girlRating;
         
@@ -92,7 +90,7 @@ namespace MVP_Archive
         {
             OnGirlPageCloseButtonClicked.Invoke();
             Debug.Log("Closed");
-          // _presenter.OnCloseButtonClicked(gameObject); тут дело в том, что скрипт на MVP page
+          
         }
     }
 

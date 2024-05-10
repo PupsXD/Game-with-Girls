@@ -15,10 +15,6 @@ public class GirlsManager : MonoBehaviour
    {
        _girls = new List<GameObject>();
        _girls.AddRange(GameObject.FindGameObjectsWithTag("Girl"));
-       // foreach (var girl in _girls)
-       // {
-       //     girl.GetComponent<GirlPanelInfo>().girlSO = girl.GetComponent<GirlPanelInfo>().GirlSO;
-       // }
        
    }
 }

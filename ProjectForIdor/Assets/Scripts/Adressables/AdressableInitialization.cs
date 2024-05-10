@@ -43,11 +43,7 @@
         {
             
                 girlPageCanvas.InstantiateAsync().Completed += OnGirlPageInstantiated;
-            
-            // else if (Load == false)
-            // {
-            //     
-            // }
+                
             
         }
         
@@ -55,7 +51,6 @@
         {
             
                 girlPageCanvas.ReleaseInstance(_instanceRefererence);
-                //Destroy(_instanceRefererence);
             
         }
 
@@ -63,12 +58,12 @@
         {
             if (handle.Status == AsyncOperationStatus.Succeeded)
             {
-                //Instantiate(handle.Result);
+                
                 GameObject instantiatedObject = Instantiate(handle.Result);
-                //instantiatedObjects.Add(instantiatedObject);
+                
             }
 
-            //_instanceRefrerence = handle.Result;
+            
             else
             {
                 Debug.LogError("Adressable was not loaded");
@@ -88,11 +83,7 @@
         {
             if (handle.Status == AsyncOperationStatus.Succeeded)
             {
-                // Instantiate or process the loaded GirlSO asset here
-                // For example:
                 loadedGirlSOs.Add(handle.Result);
-                //GirlSO girlSO = handle.Result;
-                //Debug.Log("GirlSO loaded: " + girlSO.girlName);
             }
             else
             {

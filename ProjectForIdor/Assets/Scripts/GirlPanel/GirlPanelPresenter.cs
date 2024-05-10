@@ -31,9 +31,6 @@ namespace GirlPanel
             _girlPanelModel = GetComponent<GirlPanelModel>();
             girlList.AddRange(GameObject.FindGameObjectsWithTag("Girl"));
             _girlPanelView.AddRange(GameObject.FindGameObjectsWithTag("Girl")[0].GetComponents<GirlPanelView>());
-            //_girlPanelModel = GetComponent<GirlPanelModel>();
-            //_girlPanelView = GetComponent<GirlPanelView>();
-            //_girlSO = _girlPanelModel.GetGirlSO();
             OnGirlGirlPageLoad.AddListener(GameObject.FindGameObjectsWithTag("Instantiator")[0].GetComponent<AdressableInitialization>().InitializeGirlPageCanvas);
             OnGirlPageClosed.AddListener(GameObject.FindGameObjectsWithTag("Instantiator")[0].GetComponent<AdressableInitialization>().ReleaseGirlPage);
         }

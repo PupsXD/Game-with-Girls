@@ -38,7 +38,7 @@ namespace GirlPanel
 
         private void SetGirlSO()
         {
-            girlSOList = _adressableInitialization.GetInstantiatedGirls(); // Retrieve loaded GirlSOs
+            girlSOList = _adressableInitialization.GetInstantiatedGirls(); // Получить загруженных женщин
             
         }
 

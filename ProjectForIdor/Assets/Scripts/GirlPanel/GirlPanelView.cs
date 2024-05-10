@@ -24,8 +24,7 @@ public class GirlPanelView : View
     private Button _button;
     
     private GirlPanelPresenter _presenter;
-
-    //public UnityEvent OnGirlButtonClicked;
+    
     
     
     
@@ -34,31 +33,10 @@ public class GirlPanelView : View
         gameObject.SetActive(true);
         _presenter = GameObject.FindGameObjectsWithTag("MVP")[0].GetComponent<GirlPanelPresenter>();
         _button = GetComponent<Button>();
-        //OnGirlButtonClicked.AddListener(GameObject.FindGameObjectsWithTag("Instantiator")[0].GetComponent<AdressableInitialization>().InitializeGirlPageCanvas);
+        
         
     }
-
-    // private void Start()
-    // {
-    //     girlSO = _presenter.GetGirlSO();
-    //     girlName.text = girlSO.girlName;
-    //     achivmentsCount.text = $"{girlSO.achivmentsCount} из 5";
-    //     girlSprite.sprite = girlSO.girlSprite;
-    //
-    //     _isAchivmentUnlocked = girlSO.isAchivmentUnlocked;
-    //     if (_isAchivmentUnlocked)
-    //     {
-    //         achivmentStatus.text = "Пройдено";
-    //         achivmentSprite.gameObject.SetActive(true);
-    //     }
-    //     else
-    //     {
-    //         achivmentStatus.text = "Не пройдено";
-    //         achivmentSprite.gameObject.SetActive(false);
-    //     }
-    //     
-    //     _button.onClick.AddListener(() => _presenter.OnGirlClicked());  
-    // }
+    
 
     public void SetGirlSO(GirlSO girlSO)
     {
@@ -85,7 +63,6 @@ public class GirlPanelView : View
     public override void OnButtonClicked(int buttonNumber)
     {
         _presenter.OnGirlButtonClicked(buttonNumber);
-        //OnGirlButtonClicked.Invoke();
     }
 
     public override void CloseButtonClicked()

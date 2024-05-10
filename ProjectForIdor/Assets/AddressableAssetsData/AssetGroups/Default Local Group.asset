@@ -17,10 +17,6 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 4b1ec713960de0242ab35c25621f5242
   m_SerializeEntries:
-  - m_GUID: 8819bb109e55a594796cf6a84dab0980
-    m_Address: Assets/Scenes/Menu.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   - m_GUID: 63777c323e424944f94ad6c4829de877
     m_Address: Assets/Scenes/GirlPage.unity
     m_ReadOnly: 0
