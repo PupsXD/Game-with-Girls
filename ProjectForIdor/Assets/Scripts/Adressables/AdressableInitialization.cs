@@ -17,6 +17,8 @@
         private GameObject _instanceRefererence;
         
         private List<GirlSO> loadedGirlSOs = new List<GirlSO>();
+
+        [SerializeField] private GameObject parentCanvas;
         
         
         
@@ -76,6 +78,10 @@
             if (handle.Status == AsyncOperationStatus.Succeeded)
             {
                 _instanceRefererence = handle.Result;
+                //_instanceRefererence.transform.SetParent(parentCanvas.transform);
+                _instanceRefererence.transform.SetParent(parentCanvas.transform, worldPositionStays: false);
+                //_instanceRefererence.transform.position = parentCanvas.transform.position;
+                //_instanceRefererence.transform.localScale = Vector3.one;
             }
         }
         
