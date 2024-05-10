@@ -64,11 +64,13 @@ namespace MVP_Archive
 
             for (int i = 0; i < girlSO.girlInterests.Count; i++)
             {
+                girlInterestIcons[i].sprite = imagesList.likeIcon;
                 girlInterests[i].text = girlSO.girlInterests[i];
             }
             
             for (int i = 0; i < girlSO.girlDislikes.Count; i++)
             {
+                girlDislikeIcons[i].sprite = imagesList.dislikeIcon;
                 girlDislikes[i].text = girlSO.girlDislikes[i];
             }
             
