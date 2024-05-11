@@ -6,6 +6,10 @@
 
     public class AdressableInitialization : MonoBehaviour
     {
+        [SerializeField] private AssetReference girlArchive;
+        
+        private GameObject _girlArchiveInstance;
+        
         [SerializeField] private List<AssetReference> girlSO;
 
         [SerializeField] private AssetReference girlPage;
@@ -20,7 +24,10 @@
 
         [SerializeField] private GameObject parentCanvas;
         
-        
+        private void Awake()
+        {
+            InstantiateGirlAcrhive();
+        }
         
 
         public void InitializeGirls( )
@@ -39,6 +46,16 @@
         public void InitializeGirlPage()
         {
             girlPage.LoadAssetAsync<GameObject>().Completed += OnAddressableLoaded;
+        }
+
+        public void InstantiateGirlAcrhive()
+        {
+            girlArchive.InstantiateAsync().Completed += OnGirlArchiveInstantiated;
+        }
+
+        public void ReleaseGirlAcrhive()
+        {
+            girlArchive.ReleaseInstance(_girlArchiveInstance);
         }
         
         public void InitializeGirlPageCanvas()
@@ -72,16 +89,24 @@
             }
                 
         }
+        
+        private void OnGirlArchiveInstantiated(AsyncOperationHandle<GameObject> handle)
+        {
+            if (handle.Status == AsyncOperationStatus.Succeeded)
+            {
+                _girlArchiveInstance = handle.Result;
+                _girlArchiveInstance.transform.SetParent(parentCanvas.transform, worldPositionStays: false);
+                
+            }
+        }
 
         private void OnGirlPageInstantiated(AsyncOperationHandle<GameObject> handle)
         {
             if (handle.Status == AsyncOperationStatus.Succeeded)
             {
                 _instanceRefererence = handle.Result;
-                //_instanceRefererence.transform.SetParent(parentCanvas.transform);
                 _instanceRefererence.transform.SetParent(parentCanvas.transform, worldPositionStays: false);
-                //_instanceRefererence.transform.position = parentCanvas.transform.position;
-                //_instanceRefererence.transform.localScale = Vector3.one;
+                
             }
         }
         

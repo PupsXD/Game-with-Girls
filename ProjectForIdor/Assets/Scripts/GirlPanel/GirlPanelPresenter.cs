@@ -22,6 +22,8 @@ namespace GirlPanel
         
         public UnityEvent OnGirlGirlPageLoad;
         public UnityEvent OnGirlPageClosed;
+        
+        private bool _areGirlsSet = false;
 
 
         private int _girlNumberCLicked; //Переменная для отслеживания на какую девушку кликнули
@@ -29,14 +31,12 @@ namespace GirlPanel
         private void Awake()
         {
             _girlPanelModel = GetComponent<GirlPanelModel>();
-            girlList.AddRange(GameObject.FindGameObjectsWithTag("Girl"));
-            _girlPanelView.AddRange(GameObject.FindGameObjectsWithTag("Girl")[0].GetComponents<GirlPanelView>());
-            OnGirlGirlPageLoad.AddListener(GameObject.FindGameObjectsWithTag("Instantiator")[0].GetComponent<AdressableInitialization>().InitializeGirlPageCanvas);
-            OnGirlPageClosed.AddListener(GameObject.FindGameObjectsWithTag("Instantiator")[0].GetComponent<AdressableInitialization>().ReleaseGirlPage);
+            
         }
         
         private void Update()
         {
+            GetGirs();
             if (girlSOList.Count != 0 && _girlPanelView.Count != 0)
             {
                 for (int i = girlList.Count - 1; i >= 0; i--)
@@ -56,6 +56,19 @@ namespace GirlPanel
                 SetDataOnGirlPage(_girlNumberCLicked);
             }
             
+            
+        }
+
+        private void GetGirs()
+        {
+            if (!_areGirlsSet)
+            {
+                girlList.AddRange(GameObject.FindGameObjectsWithTag("Girl"));
+                _girlPanelView.AddRange(GameObject.FindGameObjectsWithTag("Girl")[0].GetComponents<GirlPanelView>());
+                OnGirlGirlPageLoad.AddListener(GameObject.FindGameObjectsWithTag("Instantiator")[0].GetComponent<AdressableInitialization>().InitializeGirlPageCanvas);
+                OnGirlPageClosed.AddListener(GameObject.FindGameObjectsWithTag("Instantiator")[0].GetComponent<AdressableInitialization>().ReleaseGirlPage);
+            }
+           _areGirlsSet = true;
             
         }
         
