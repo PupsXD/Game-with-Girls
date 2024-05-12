@@ -68,7 +68,7 @@ namespace GirlPanel
                 OnGirlGirlPageLoad.AddListener(GameObject.FindGameObjectsWithTag("Instantiator")[0].GetComponent<AdressableInitialization>().InitializeGirlPageCanvas);
                 OnGirlPageClosed.AddListener(GameObject.FindGameObjectsWithTag("Instantiator")[0].GetComponent<AdressableInitialization>().ReleaseGirlPage);
             }
-           _areGirlsSet = true;
+           _areGirlsSet = true; 
             
         }
         
