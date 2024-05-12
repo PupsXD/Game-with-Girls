@@ -37,8 +37,8 @@ MonoBehaviour:
     m_Address: Assets/Prefabs/GirlPage/GirlPageWIthCanvas.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 76355dbf6fa52ea46963d5c37b07eab6
-    m_Address: Assets/Prefabs/GirlPage/GirlPageForInstantiation.prefab
+  - m_GUID: ad9ca603eb0a9364b88ab882907f515d
+    m_Address: Assets/Prefabs/GirlPage/GirlPageView.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: c37b7f853d4b29249a091038b919f15b
