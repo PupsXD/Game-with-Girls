@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Achivments;
 using GirlPanel;
 using ScriptableObjects.Girls;
 using ScriptableObjects.ImagesForPrefabs;
@@ -30,6 +31,8 @@ namespace MVP_Archive
         [SerializeField] private GirlSO girlSO;
         
         [SerializeField] private ImagesList imagesList; //Сделал, чтобы не прописывать сложную логику, а просто раскидать нужные спрайты и подставлять куда нужно, сори, можно было умнее
+
+        [SerializeField] private List<GameObject> achivments;
         
 
         public UnityEvent OnGirlPageCloseButtonClicked;
@@ -74,13 +77,22 @@ namespace MVP_Archive
                 girlDislikes[i].text = girlSO.girlDislikes[i];
             }
             
-            for (int i = 0; i < girlSO.girlAchivments.Count; i++)
-            {
-                girlAchivments[i].text = girlSO.girlAchivments[i];
-                girlAchivmentIcons[i].sprite = imagesList.achivmentIcon;
-                girlAchivmentStatus[i].sprite = imagesList.achivmentFinishedIcon;
-            }
+            InitializeAchivments();
+            // for (int i = 0; i < girlSO.girlAchivments.Count; i++)
+            // {
+            //     girlAchivments[i].text = girlSO.girlAchivments[i];
+            //     girlAchivmentIcons[i].sprite = imagesList.achivmentIcon;
+            //     girlAchivmentStatus[i].sprite = imagesList.achivmentFinishedIcon;
+            // }
             
+        }
+
+        private void InitializeAchivments()
+        {
+            for (int i = 0; i < achivments.Count; i++)
+            {
+                achivments[i].GetComponent<AchivmentManager>().SetAchivmentInfo(girlSO, i);
+            }
         }
 
         public override void OnButtonClicked(int buttonNumber)

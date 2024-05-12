@@ -15,7 +15,7 @@ C:/Users/AORUS/Documents/GitHub/Game-with-Girls/ProjectForIdor
 -logFile
 Logs/AssetImportWorker6.log
 -srvPort
-62279
+50072
 Successfully changed project path to: C:/Users/AORUS/Documents/GitHub/Game-with-Girls/ProjectForIdor
 C:/Users/AORUS/Documents/GitHub/Game-with-Girls/ProjectForIdor
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,12 +47,12 @@ C:/Users/AORUS/Documents/GitHub/Game-with-Girls/ProjectForIdor
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [29300] Host "[IP] 192.168.3.12 [Port] 0 [Flags] 2 [Guid] 1175765592 [EditorId] 1175765592 [Version] 1048832 [Id] WindowsEditor(7,Pipa) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [27804] Host "[IP] 192.168.3.12 [Port] 0 [Flags] 2 [Guid] 1368257984 [EditorId] 1368257984 [Version] 1048832 [Id] WindowsEditor(7,Pipa) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [29300] Host "[IP] 192.168.3.12 [Port] 0 [Flags] 2 [Guid] 1175765592 [EditorId] 1175765592 [Version] 1048832 [Id] WindowsEditor(7,Pipa) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [27804] Host "[IP] 192.168.3.12 [Port] 0 [Flags] 2 [Guid] 1368257984 [EditorId] 1368257984 [Version] 1048832 [Id] WindowsEditor(7,Pipa) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
-Refreshing native plugins compatible for Editor in 122.87 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 112.73 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.30f1 (b4360d7cdac4)
 [Subsystems] Discovering subsystems at path C:/UnityVersions/2021.3.30f1/Editor/Data/Resources/UnitySubsystems
@@ -68,102 +68,102 @@ Initialize mono
 Mono path[0] = 'C:/UnityVersions/2021.3.30f1/Editor/Data/Managed'
 Mono path[1] = 'C:/UnityVersions/2021.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/UnityVersions/2021.3.30f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56344
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56880
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/UnityVersions/2021.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/UnityVersions/2021.3.30f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/UnityVersions/2021.3.30f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/UnityVersions/2021.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004531 seconds.
+Registered in 0.004091 seconds.
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 227 ms
+Android Extension - Scanning For ADB Devices 597 ms
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 98.15 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 107.52 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.871 seconds
+- Completed reload, in  1.183 seconds
 Domain Reload Profiling:
-	ReloadAssembly (871ms)
-		BeginReloadAssembly (86ms)
+	ReloadAssembly (1183ms)
+		BeginReloadAssembly (75ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (700ms)
-			LoadAssemblies (84ms)
+		EndReloadAssembly (1034ms)
+			LoadAssemblies (74ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (96ms)
+			SetupTypeCache (88ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (24ms)
-			SetupLoadedEditorAssemblies (542ms)
+			SetupLoadedEditorAssemblies (889ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (311ms)
+				InitializePlatformSupportModulesInManaged (681ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (98ms)
+				RefreshPlugins (108ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (91ms)
-				ProcessInitializeOnLoadMethodAttributes (40ms)
+				ProcessInitializeOnLoadAttributes (65ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005592 seconds.
+Registered in 0.005361 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 97.96 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 104.95 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  1.726 seconds
+- Completed reload, in  1.623 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1727ms)
-		BeginReloadAssembly (108ms)
+	ReloadAssembly (1624ms)
+		BeginReloadAssembly (95ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (1535ms)
-			LoadAssemblies (96ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (1452ms)
+			LoadAssemblies (82ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (249ms)
+			SetupTypeCache (219ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (62ms)
-			SetupLoadedEditorAssemblies (1106ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (1061ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (22ms)
+				InitializePlatformSupportModulesInManaged (23ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (98ms)
-				BeforeProcessingInitializeOnLoad (110ms)
-				ProcessInitializeOnLoadAttributes (800ms)
-				ProcessInitializeOnLoadMethodAttributes (70ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				RefreshPlugins (105ms)
+				BeforeProcessingInitializeOnLoad (107ms)
+				ProcessInitializeOnLoadAttributes (759ms)
+				ProcessInitializeOnLoadMethodAttributes (61ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.87 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.79 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5787 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 40 unused Assets / (0.7 MB). Loaded Objects now: 6248.
-Memory consumption went from 225.9 MB to 225.2 MB.
-Total: 3.727300 ms (FindLiveObjects: 0.358100 ms CreateObjectMapping: 0.184200 ms MarkObjects: 2.959900 ms  DeleteObjects: 0.223500 ms)
+Unloading 5790 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (0.7 MB). Loaded Objects now: 6251.
+Memory consumption went from 226.1 MB to 225.4 MB.
+Total: 3.747200 ms (FindLiveObjects: 0.355900 ms CreateObjectMapping: 0.191100 ms MarkObjects: 2.968700 ms  DeleteObjects: 0.230800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -178,6 +178,395 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006177 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.685 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1685ms)
+		BeginReloadAssembly (139ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1462ms)
+			LoadAssemblies (97ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (275ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (962ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (103ms)
+				ProcessInitializeOnLoadAttributes (740ms)
+				ProcessInitializeOnLoadMethodAttributes (87ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.97 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5677 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (0.7 MB). Loaded Objects now: 6254.
+Memory consumption went from 216.5 MB to 215.8 MB.
+Total: 3.901000 ms (FindLiveObjects: 0.396700 ms CreateObjectMapping: 0.251100 ms MarkObjects: 2.997700 ms  DeleteObjects: 0.254100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 8083.072003 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '531af454bb134a2b3d03467baf208651') in 0.116316 seconds 
+Number of asset objects unloaded after import = 447
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004805 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.716 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1717ms)
+		BeginReloadAssembly (144ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (1469ms)
+			LoadAssemblies (101ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (297ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (945ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (24ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (99ms)
+				ProcessInitializeOnLoadAttributes (738ms)
+				ProcessInitializeOnLoadMethodAttributes (76ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (34ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.85 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5677 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (0.7 MB). Loaded Objects now: 6258.
+Memory consumption went from 216.6 MB to 215.9 MB.
+Total: 4.257700 ms (FindLiveObjects: 0.511200 ms CreateObjectMapping: 0.305600 ms MarkObjects: 3.157000 ms  DeleteObjects: 0.282500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 93.529609 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPageView 1.prefab
+  artifactKey: Guid(7be82fd78df928346abb1be382085fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPageView 1.prefab using Guid(7be82fd78df928346abb1be382085fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ccd6ef1939f4d821702a4dd40a54906') in 0.039388 seconds 
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f668c392a77acf5dce6ce044145f672') in 0.074366 seconds 
+Number of asset objects unloaded after import = 447
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPageForInstantiation Variant.prefab
+  artifactKey: Guid(4d181541946bf6a4bba54d7a09290ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPageForInstantiation Variant.prefab using Guid(4d181541946bf6a4bba54d7a09290ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9af2d28bb699f504b301754c629d4a32') in 0.051285 seconds 
+Number of asset objects unloaded after import = 859
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPageView.prefab
+  artifactKey: Guid(ad9ca603eb0a9364b88ab882907f515d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPageView.prefab using Guid(ad9ca603eb0a9364b88ab882907f515d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28f1b9e25acb2db78d9d2a44b2d2a7e9') in 0.009857 seconds 
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 4.550594 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.050082 seconds  code(4) message(Build asset version error: assets/prefabs/girlpage/girlpage.prefab in SourceAssetDB has modification time of '2024-05-12T10:40:00.4318498Z' while content on disk has modification time of '2024-05-12T10:40:00.7375618Z')
+  ERROR: Build asset version error: assets/prefabs/girlpage/girlpage.prefab in SourceAssetDB has modification time of '2024-05-12T10:40:00.4318498Z' while content on disk has modification time of '2024-05-12T10:40:00.7375618Z'
+Number of asset objects unloaded after import = 45
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPageView 1.prefab
+  artifactKey: Guid(7be82fd78df928346abb1be382085fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPageView 1.prefab using Guid(7be82fd78df928346abb1be382085fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '911f7f5ec511471631757f5f3cc20769') in 0.005851 seconds 
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.232697 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e5e75612f13461592259d26ac504b6c') in 0.048211 seconds 
+Number of asset objects unloaded after import = 447
+========================================================================
+Received Import Request.
+  Time since last request: 0.452406 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '713cc834d3662534d4e93865221dcc30') in 0.044073 seconds 
+Number of asset objects unloaded after import = 447
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPageForInstantiation.prefab
+  artifactKey: Guid(76355dbf6fa52ea46963d5c37b07eab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPageForInstantiation.prefab using Guid(76355dbf6fa52ea46963d5c37b07eab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee8a93b0815e5de442cd12d211a06031') in 0.042484 seconds 
+Number of asset objects unloaded after import = 452
+========================================================================
+Received Import Request.
+  Time since last request: 0.412737 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d90e35c45f19415ce847cd4edd56e61') in 0.042487 seconds 
+Number of asset objects unloaded after import = 447
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPageForInstantiation.prefab
+  artifactKey: Guid(76355dbf6fa52ea46963d5c37b07eab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPageForInstantiation.prefab using Guid(76355dbf6fa52ea46963d5c37b07eab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75d7fbcd30d91b8f2e033948d21021cb') in 0.041342 seconds 
+Number of asset objects unloaded after import = 452
+========================================================================
+Received Import Request.
+  Time since last request: 0.825308 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afbf2790ab16774e56c6ef50f1bc6128') in 0.042965 seconds 
+Number of asset objects unloaded after import = 447
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPageForInstantiation.prefab
+  artifactKey: Guid(76355dbf6fa52ea46963d5c37b07eab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPageForInstantiation.prefab using Guid(76355dbf6fa52ea46963d5c37b07eab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a7e4c89a57dc9eabf3792d5366ca619') in 0.042606 seconds 
+Number of asset objects unloaded after import = 452
+========================================================================
+Received Import Request.
+  Time since last request: 0.801603 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb630ea65e6fd6ce36213a07e51e4cc') in 0.041132 seconds 
+Number of asset objects unloaded after import = 447
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPageForInstantiation.prefab
+  artifactKey: Guid(76355dbf6fa52ea46963d5c37b07eab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPageForInstantiation.prefab using Guid(76355dbf6fa52ea46963d5c37b07eab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '229b7d3e8a49c0aea8905760f76d01f5') in 0.044832 seconds 
+Number of asset objects unloaded after import = 452
+========================================================================
+Received Import Request.
+  Time since last request: 2.641236 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99d69ccd8a81a50b00aae3dd83cb61aa') in 0.046168 seconds 
+Number of asset objects unloaded after import = 447
+========================================================================
+Received Import Request.
+  Time since last request: 0.441367 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b8895a3a92229e90a3008615d5f974') in 0.042840 seconds 
+Number of asset objects unloaded after import = 447
+========================================================================
+Received Import Request.
+  Time since last request: 0.442842 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '845567291e654c04a68343d4c5e502ec') in 0.042413 seconds 
+Number of asset objects unloaded after import = 447
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPageForInstantiation.prefab
+  artifactKey: Guid(76355dbf6fa52ea46963d5c37b07eab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPageForInstantiation.prefab using Guid(76355dbf6fa52ea46963d5c37b07eab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ac044ec648bbb28669d4ca3cd49e184') in 0.041207 seconds 
+Number of asset objects unloaded after import = 452
+========================================================================
+Received Import Request.
+  Time since last request: 0.403482 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80fffa223f4d927cbcd607eecda0a50c') in 0.046964 seconds 
+Number of asset objects unloaded after import = 447
+========================================================================
+Received Import Request.
+  Time since last request: 0.460562 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5134ad68f791e2a88ec3740203502fea') in 0.045823 seconds 
+Number of asset objects unloaded after import = 447
+========================================================================
+Received Import Request.
+  Time since last request: 2.103871 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a6ffa0f95f4259b4930f206114c4ef7') in 0.044472 seconds 
+Number of asset objects unloaded after import = 447
+========================================================================
+Received Import Request.
+  Time since last request: 0.422730 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e922c181ba96a8cdc2ef42ec596c4fe') in 0.042599 seconds 
+Number of asset objects unloaded after import = 447
+========================================================================
+Received Import Request.
+  Time since last request: 0.450182 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbd420061513357c1bb19bd4724045e7') in 0.044099 seconds 
+Number of asset objects unloaded after import = 447
+========================================================================
+Received Import Request.
+  Time since last request: 0.449554 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fba419d835411b20706b9530b3f70df') in 0.046047 seconds 
+Number of asset objects unloaded after import = 447
+========================================================================
+Received Import Request.
+  Time since last request: 0.448193 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3ed6a8cf378e4ec522f98b73f6fdd39') in 0.044884 seconds 
+Number of asset objects unloaded after import = 447
+========================================================================
+Received Import Request.
+  Time since last request: 13.028093 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad0c1ed18f605c99d403e7a1f9ac674d') in 0.051682 seconds 
+Number of asset objects unloaded after import = 447
+========================================================================
+Received Import Request.
+  Time since last request: 2.255903 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '825916adcb1652140b1a5fa1de25d2c0') in 0.054677 seconds 
+Number of asset objects unloaded after import = 447
+========================================================================
+Received Import Request.
+  Time since last request: 2.296129 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7571fb72916c820d11224894b184393b') in 0.045179 seconds 
+Number of asset objects unloaded after import = 447
+========================================================================
+Received Import Request.
+  Time since last request: 5.758479 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5939bd4abfb4a61a3751276be4861b97') in 0.045070 seconds 
+Number of asset objects unloaded after import = 447
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPageForInstantiation.prefab
+  artifactKey: Guid(76355dbf6fa52ea46963d5c37b07eab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPageForInstantiation.prefab using Guid(76355dbf6fa52ea46963d5c37b07eab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4866708f22648dc96241ea7ba2af674') in 0.041415 seconds 
+Number of asset objects unloaded after import = 452
+========================================================================
+Received Import Request.
+  Time since last request: 3.109288 seconds.
+  path: Assets/Prefabs/GirlPage/GirlPage.prefab
+  artifactKey: Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/GirlPage/GirlPage.prefab using Guid(538378a4f71a6854f9619a84b12762c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '106d1d8c4b471f4b0e5d40348bebe29d') in 0.046605 seconds 
+Number of asset objects unloaded after import = 447
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

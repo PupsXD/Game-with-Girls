@@ -20,6 +20,10 @@ namespace ScriptableObjects.Girls
         
         public int[] girlRating = new int[] {0, 1, 2};
         
+        public enum achivmentType {achivment, achivmentPuzzle, achivmentFinished};
+
+        public List<achivmentType> girlAchivmentStatus;
+        
         public bool isAchivmentUnlocked = false;
         
     }

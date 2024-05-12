@@ -45,6 +45,18 @@ MonoBehaviour:
     m_Address: Assets/Prefabs/GirlArchive/GirlArchivePage.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 1300e7b1d38bf164096f30f11b76deef
+    m_Address: Assets/Prefabs/Achivments/Last_achivment.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7d0901344f4d1e14f9457d7d267e0450
+    m_Address: Assets/Prefabs/Achivments/First_achivment.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2583c785838f61b48aabbefa7c01dcae
+    m_Address: Assets/Prefabs/Achivments/AchivmentMiddle.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: ecbf5f75f5e5e7a4da7e387b189fb245, type: 2}
   m_SchemaSet:
