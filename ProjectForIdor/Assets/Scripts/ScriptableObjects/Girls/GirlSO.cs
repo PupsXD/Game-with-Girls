@@ -24,6 +24,8 @@ namespace ScriptableObjects.Girls
 
         public List<achivmentType> girlAchivmentStatus;
         
+        public List<int> achivmentStatus;
+        
         public bool isAchivmentUnlocked = false;
         
     }

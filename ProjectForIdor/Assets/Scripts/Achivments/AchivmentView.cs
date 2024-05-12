@@ -32,20 +32,20 @@ public class AchivmentView : MonoBehaviour
             }
         }
 
-        // if (_achivmentModel.achivmentType = AchivmentModel.AchivmentType.achivment)
-        // {
-        //     achivmentImage.gameObject.SetActive(true);
-        // }
-        // else if (_achivmentModel.achivmentType == AchivmentModel.AchivmentType.achivmentPuzzle)
-        // {
-        //     achivmentImage.gameObject.SetActive(false);
-        //     puzzleImage.gameObject.SetActive(true);
-        // }
-        // else if (_achivmentModel.achivmentType == AchivmentModel.AchivmentType.achivmentFinished)
-        // {
-        //     achivmentImage.gameObject.SetActive(false);
-        //     achivmentFinished.gameObject.SetActive(true);
-        // }
+        if (_achivmentModel.achievementType == AchievementsModel.Type.achivment)
+        {
+            achivmentImage.gameObject.SetActive(true);
+        }
+        else if (_achivmentModel.achievementType == AchievementsModel.Type.achivmentPuzzle)
+        {
+            achivmentImage.gameObject.SetActive(false);
+            puzzleImage.gameObject.SetActive(true);
+        }
+        else if (_achivmentModel.achievementType == AchievementsModel.Type.achivmentFinished)
+        {
+            achivmentImage.gameObject.SetActive(false);
+            achivmentFinished.gameObject.SetActive(true);
+        }
         
     }
     
