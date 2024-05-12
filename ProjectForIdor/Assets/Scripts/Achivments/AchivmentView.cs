@@ -1,12 +1,13 @@
 using System.Collections.Generic;
 using Achivments;
+using ScriptableObjects.Girls;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class AchivmentView : MonoBehaviour
 {
-    private AchivmentModel _achivmentModel;
+    private AchievementsModel _achivmentModel;
     [SerializeField] private Image achivmentMarker;
     [SerializeField] private Image achivmentDone;
     [SerializeField] private TextMeshProUGUI achivmentText;
@@ -17,11 +18,11 @@ public class AchivmentView : MonoBehaviour
     
     private bool isAchivmentUnlocked = false;
 
-    public void SetAchivmentData(AchivmentModel achivement)
+    public void SetAchivmentData(AchievementsModel achivement)
     {
         _achivmentModel = achivement;
         achivmentText.text = _achivmentModel.AchivmentDescription;
-        if (_achivmentModel.isAchivmentUnlocked)
+        if (_achivmentModel.isAchieved)
         {
             isAchivmentUnlocked = true;
             if (isAchivmentUnlocked)
@@ -31,20 +32,20 @@ public class AchivmentView : MonoBehaviour
             }
         }
 
-        if (_achivmentModel.achivmentType == AchivmentModel.AchivmentType.achivment)
-        {
-            achivmentImage.gameObject.SetActive(true);
-        }
-        else if (_achivmentModel.achivmentType == AchivmentModel.AchivmentType.achivmentPuzzle)
-        {
-            achivmentImage.gameObject.SetActive(false);
-            puzzleImage.gameObject.SetActive(true);
-        }
-        else if (_achivmentModel.achivmentType == AchivmentModel.AchivmentType.achivmentFinished)
-        {
-            achivmentImage.gameObject.SetActive(false);
-            achivmentFinished.gameObject.SetActive(true);
-        }
+        // if (_achivmentModel.achivmentType = AchivmentModel.AchivmentType.achivment)
+        // {
+        //     achivmentImage.gameObject.SetActive(true);
+        // }
+        // else if (_achivmentModel.achivmentType == AchivmentModel.AchivmentType.achivmentPuzzle)
+        // {
+        //     achivmentImage.gameObject.SetActive(false);
+        //     puzzleImage.gameObject.SetActive(true);
+        // }
+        // else if (_achivmentModel.achivmentType == AchivmentModel.AchivmentType.achivmentFinished)
+        // {
+        //     achivmentImage.gameObject.SetActive(false);
+        //     achivmentFinished.gameObject.SetActive(true);
+        // }
         
     }
     

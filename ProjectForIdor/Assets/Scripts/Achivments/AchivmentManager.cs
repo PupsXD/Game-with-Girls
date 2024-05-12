@@ -18,12 +18,17 @@ namespace Achivments
     public class AchivmentManager : MonoBehaviour
     {
         [SerializeField] private AchivmentView achivmentView;
-        
-        [SerializeField] private AchivmentModel achivmentModel;
+
+        [SerializeField] private AchievementsModel achivmentModel = new AchievementsModel();
         
         [SerializeField] private GirlSO girlSO;
         
         private bool dataLoaded = false;
+        
+        private void Awake()
+        {
+            achivmentView = GetComponent<AchivmentView>();
+        }
 
 
         private void Update()
@@ -38,8 +43,8 @@ namespace Achivments
         public void SetAchivmentInfo(GirlSO girl, int index)
         {
             achivmentModel.AchivmentDescription = girl.girlAchivments[index];
-            achivmentModel.achivmentType = (AchivmentModel.AchivmentType)girl.girlAchivmentStatus[index];
-            achivmentModel.isAchivmentUnlocked = girl.isAchivmentUnlocked;
+            //achivmentModel.achivmentType = girl.girlAchivmentStatus[index];
+            achivmentModel.isAchieved = girl.isAchivmentUnlocked;
             dataLoaded = true;
             
             
