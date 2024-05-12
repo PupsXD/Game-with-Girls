@@ -11,7 +11,7 @@ namespace GirlPanel
         private GirlPanelModel _girlPanelModel;
         [SerializeField] private List<GirlPanelView> _girlPanelView = new List<GirlPanelView>();
         
-        //[SerializeField] private GirlSO _girlSO;
+        
         [SerializeField] private List<GirlSO> girlSOList = new List<GirlSO>();
         [SerializeField] private List<GameObject> girlList = new List<GameObject>();
         
@@ -20,17 +20,18 @@ namespace GirlPanel
         private bool _isGirlDataLoaded = false;
         private bool _isGirlPageLoaded = false;
         
-        public UnityEvent OnGirlGirlPageLoad;
-        public UnityEvent OnGirlPageClosed;
         
         private bool _areGirlsSet = false;
 
 
         private int _girlNumberCLicked; //Переменная для отслеживания на какую девушку кликнули
+
+        private AdressableInitialization _initialization;
         
         private void Awake()
         {
             _girlPanelModel = GetComponent<GirlPanelModel>();
+            _initialization = GameObject.FindGameObjectsWithTag("Instantiator")[0].GetComponent<AdressableInitialization>();
             
         }
         
@@ -65,10 +66,9 @@ namespace GirlPanel
             {
                 girlList.AddRange(GameObject.FindGameObjectsWithTag("Girl"));
                 _girlPanelView.AddRange(GameObject.FindGameObjectsWithTag("Girl")[0].GetComponents<GirlPanelView>());
-                OnGirlGirlPageLoad.AddListener(GameObject.FindGameObjectsWithTag("Instantiator")[0].GetComponent<AdressableInitialization>().InitializeGirlPageCanvas);
-                OnGirlPageClosed.AddListener(GameObject.FindGameObjectsWithTag("Instantiator")[0].GetComponent<AdressableInitialization>().ReleaseGirlPage);
+                
             }
-           _areGirlsSet = true; 
+            _areGirlsSet = true; 
             
         }
         
@@ -91,9 +91,11 @@ namespace GirlPanel
 
         public void OnGirlButtonClicked(int girlNumber)
         {
+            int i = girlNumber;
             if (_isGirlDataLoaded)
             {
-                OnGirlGirlPageLoad.Invoke();
+                _initialization.InitializeGirlPageCanvas();
+                
                 _isGirlPageLoaded = true;
             }
             
@@ -105,7 +107,7 @@ namespace GirlPanel
         {
             if (_isGirlDataLoaded)
             {
-                OnGirlPageClosed.Invoke();
+                _initialization.ReleaseGirlPage();
                 _isGirlPageLoaded = false;
             }
             

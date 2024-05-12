@@ -34,8 +34,8 @@ namespace MVP_Archive
 
         [SerializeField] private List<GameObject> achivments;
         
-
-        public UnityEvent OnGirlPageCloseButtonClicked;
+        [SerializeField] private Button closeGirlPageButton;
+        
         
         
         private GirlPanelPresenter _presenter;
@@ -44,7 +44,7 @@ namespace MVP_Archive
         {
 
             _presenter = GameObject.FindGameObjectsWithTag("MVP")[0].GetComponent<GirlPanelPresenter>();
-            OnGirlPageCloseButtonClicked.AddListener(_presenter.CloseGirlPage);
+           
         }
 
 
@@ -78,12 +78,7 @@ namespace MVP_Archive
             }
             
             InitializeAchivments();
-            // for (int i = 0; i < girlSO.girlAchivments.Count; i++)
-            // {
-            //     girlAchivments[i].text = girlSO.girlAchivments[i];
-            //     girlAchivmentIcons[i].sprite = imagesList.achivmentIcon;
-            //     girlAchivmentStatus[i].sprite = imagesList.achivmentFinishedIcon;
-            // }
+          
             
         }
 
@@ -102,7 +97,8 @@ namespace MVP_Archive
 
         public override void CloseButtonClicked()
         {
-            OnGirlPageCloseButtonClicked.Invoke();
+            _presenter.CloseGirlPage();
+            
             Debug.Log("Closed");
           
         }
