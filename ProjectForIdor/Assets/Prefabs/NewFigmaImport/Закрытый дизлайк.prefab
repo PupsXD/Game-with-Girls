@@ -33,10 +33,10 @@ RectTransform:
   m_Father: {fileID: 5585478659420733690}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -44.5, y: 0}
-  m_SizeDelta: {x: -89, y: -14}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 25.5, y: 0}
+  m_SizeDelta: {x: 51, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5585478658616118561
 CanvasRenderer:
@@ -112,7 +112,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 140, y: 62}
+  m_SizeDelta: {x: 690, y: 62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5585478659492901987
 GameObject:
@@ -123,10 +123,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5585478659492901986}
-  - component: {fileID: 5585478659492901998}
   - component: {fileID: 5585478659492901999}
   - component: {fileID: 5585478659492901984}
-  - component: {fileID: 5585478659492901985}
   m_Layer: 5
   m_Name: "\u0422\u0435\u043A\u0441\u0442"
   m_TagString: Untagged
@@ -152,22 +150,8 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 38.429993, y: -0.125}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -79.140015, y: 0.25}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &5585478659492901998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5585478659492901987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalFit: 2
-  m_VerticalFit: 2
 --- !u!222 &5585478659492901999
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -265,15 +249,3 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!225 &5585478659492901985
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5585478659492901987}
-  m_Enabled: 1
-  m_Alpha: 0.5
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0

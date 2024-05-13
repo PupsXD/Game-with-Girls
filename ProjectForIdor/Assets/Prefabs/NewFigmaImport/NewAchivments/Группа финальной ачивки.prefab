@@ -397,7 +397,6 @@ GameObject:
   - component: {fileID: 8222124286234243313}
   - component: {fileID: 8222124286234243312}
   - component: {fileID: 8222124286234243215}
-  - component: {fileID: 8222124286234243214}
   m_Layer: 5
   m_Name: "\u0422\u0435\u043A\u0441\u0442 \u0424\u0438\u043D\u0430\u043B\u044C\u043D\u0430\u044F
     \u0430\u0447\u0438\u0432\u043A\u0430"
@@ -421,10 +420,10 @@ RectTransform:
   m_Father: {fileID: 8222124287102999401}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -38.380005, y: 9.375}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 410.5, y: 9.375}
+  m_SizeDelta: {x: 474.99997, y: 63.249924}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8222124286234243313
 MonoBehaviour:
@@ -438,8 +437,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalFit: 2
-  m_VerticalFit: 2
+  m_HorizontalFit: 0
+  m_VerticalFit: 0
 --- !u!222 &8222124286234243312
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -495,10 +494,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42
+  m_fontSize: 42.65
   m_fontSizeBase: 42
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -537,18 +536,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!225 &8222124286234243214
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8222124286234243212}
-  m_Enabled: 1
-  m_Alpha: 0.5
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &8222124286981076727
 GameObject:
   m_ObjectHideFlags: 0
