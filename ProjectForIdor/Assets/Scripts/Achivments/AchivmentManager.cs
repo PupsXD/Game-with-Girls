@@ -42,9 +42,14 @@ namespace Achivments
 
         public void SetAchivmentInfo(GirlSO girl, int index)
         {
+            girlSO = girl;
             achivmentModel.AchivmentDescription = girl.girlAchivments[index];
             achivmentModel.achievementType = (AchievementsModel.Type)girl.girlAchivmentStatus[index];
-            achivmentModel.isAchieved = girl.isAchivmentUnlocked;
+            if (achivmentModel.AchivmentDescription != null)
+            {
+                achivmentModel.isAchieved = true;
+            }
+            //achivmentModel.isAchieved = girl.isAchivmentUnlocked;
             dataLoaded = true;
             
             

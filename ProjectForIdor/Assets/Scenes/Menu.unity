@@ -479,7 +479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   girlArchive:
-    m_AssetGUID: c37b7f853d4b29249a091038b919f15b
+    m_AssetGUID: f3ad11470be7c9c4eab638647a4df29a
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
@@ -502,7 +502,7 @@ MonoBehaviour:
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   girlPageCanvas:
-    m_AssetGUID: 538378a4f71a6854f9619a84b12762c9
+    m_AssetGUID: 994e563b65cc94d4ba4f71a50d212238
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
