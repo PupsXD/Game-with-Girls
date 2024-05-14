@@ -3,6 +3,7 @@
     using UnityEngine;
     using UnityEngine.AddressableAssets;
     using UnityEngine.ResourceManagement.AsyncOperations;
+    using UnityEngine.Serialization;
 
     public class AdressableInitialization : MonoBehaviour
     {
@@ -11,12 +12,10 @@
         private GameObject _girlArchiveInstance;
         
         [SerializeField] private List<AssetReference> girlSO;
-
-        [SerializeField] private AssetReference girlPage;
         
         private GameObject _girlPageInstance;
 
-        [SerializeField] private AssetReference girlPageCanvas;
+        [SerializeField] private AssetReference girlPage;
         
         private GameObject _instanceRefererence;
         
@@ -43,10 +42,6 @@
             return loadedGirlSOs;
         }
         
-        public void InitializeGirlPage()
-        {
-            girlPage.LoadAssetAsync<GameObject>().Completed += OnAddressableLoaded;
-        }
 
         public void InstantiateGirlAcrhive()
         {
@@ -61,7 +56,7 @@
         public void InitializeGirlPageCanvas()
         {
             
-                girlPageCanvas.InstantiateAsync().Completed += OnGirlPageInstantiated;
+                girlPage.InstantiateAsync().Completed += OnGirlPageInstantiated;
                 
             
         }
@@ -69,7 +64,7 @@
         public void ReleaseGirlPage()
         {
             
-                girlPageCanvas.ReleaseInstance(_instanceRefererence);
+                girlPage.ReleaseInstance(_instanceRefererence);
             
         }
 

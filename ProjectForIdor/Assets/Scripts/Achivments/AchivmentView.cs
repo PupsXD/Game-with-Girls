@@ -21,6 +21,7 @@ public class AchivmentView : MonoBehaviour
     public void SetAchivmentData(AchievementsModel achivement)
     {
         _achivmentModel = achivement;
+        
         achivmentText.text = _achivmentModel.AchivmentDescription;
         if (_achivmentModel.isAchieved)
         {

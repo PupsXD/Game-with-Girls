@@ -497,11 +497,6 @@ MonoBehaviour:
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   girlPage:
-    m_AssetGUID: 63777c323e424944f94ad6c4829de877
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_EditorAssetChanged: 0
-  girlPageCanvas:
     m_AssetGUID: 994e563b65cc94d4ba4f71a50d212238
     m_SubObjectName: 
     m_SubObjectType: 
